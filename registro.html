@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>registro de producto</title>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="livevalidation_standalone.compressed.js"></script>
+	</head>
+	<body>
+	<center>
+<table width="220" border="0" cellspaciong="0" cellpadigding="1">
+<tr bgcolor="white" align="center">
+
+    	<td><b><font color="black"> <h2>registro</h2></font></b></td>
+</tr>
+		<form action="valid.php" method = "post">
+     
+<tr bgcolor="black">
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+<tr bgcolor="white">
+<td>
+   	
+tipo de chocolate: <input id="f1" type="varchar" name="tipo" /><br />
+			<script type="text/javascript">
+  				var f1 = new LiveValidation('f1');
+  				f1.add(Validate.Presence, {failureMessage: "escriba el tipo de chocolate"});
+			</script>             		
+    		cantidad: <input id="f2" type="int" name="cantidad" /><br />
+			<script type="text/javascript">
+  				var f2 = new LiveValidation('f2');
+  				f2.add(Validate.Presence, {failureMessage: "escriba la cantidad"});
+			</script>             		
+    		             		
+			<br /><input type="submit" value="Enviar"/>
+</td>
+</tr>
+</center>
+</table>
+</td>
+</tr>
+</table>
+    	</form>
+	</body>
+</html>

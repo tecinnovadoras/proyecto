@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>productos</title>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="livevalidation_standalone.compressed.js"></script>
+	</head>
+	<body>
+<table width="220" border="0" cellspaciong="0" cellpadigding="1">
+<tr bgcolor="white" align="center">
+
+    	<td><b><font color="black"> <h1>productos</h1></font></b></td>
+</tr>
+		<form action="validar.php" method = "post">
+     
+<tr bgcolor="white">
+<td>
+<center>
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+<tr bgcolor="white">
+<td>
+   	
+                     chocolate blanco $10 : <input id="f1" type="text" name="blanco" /><br />
+			<script type="text/javascript">
+  				var f1 = new LiveValidation('f1');
+  				f1.add(Validate.Presence, {failureMessage: ""});
+			</script>             		
+    		chocolate con nuez $10: <input id="f2" type="LAVADO NORMAL" name="nuez" /><br />
+			<script type="text/javascript">
+  				var f2 = new LiveValidation('f2');
+  				f2.add(Validate.Presence, {failureMessage: ""});
+			</script>             		
+    		chocolate con almendra $12: <input id="f3" type="text" name="almendra" /><br />
+			<script type="text/javascript">
+  				var f3 = new LiveValidation('f3');
+  				f3.add(Validate.Presence, {failureMessage: ""});
+			</script> 
+    	    chocolate con avellana $15 <input id="f4" type="text" name="avellana" />
+			<script type="text/javascript">
+				var f4 = new LiveValidation('f4');
+				f4.add(Validate.Presence, {failureMessage: ""});
+				f4.add(Validate.Numericality, {minimum:1, maximum:100, onlyInteger: true});
+			</script> 
+			<br /><input type="submit" value="Enviar"/>
+</td>
+</tr>
+</center>
+</table>
+</td>
+</tr>
+</table>
+    	</form>
+	</body>
+</html>

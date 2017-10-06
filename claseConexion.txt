@@ -1,0 +1,21 @@
+<?php
+class conexion
+{
+      private  $server="localhost";
+	  private  $usr="root";
+	  private  $pass="root";
+	  private  $db="php;
+	  
+	  
+	  function conectar ()
+	  {
+	         return mysql_connect($this->server,$this->usr,$this->pass );
+			 
+	  }
+	  
+	  function consulta($csql)
+	  {
+	  
+	      $conexion =$this-conectar() ;
+		  mysql_select_db($this->db,$conexion);
+		  return mysql_querry($csql,$conexion);;
